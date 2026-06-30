@@ -1,49 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduTech Center | Learn & Innovate</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .hero-section { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80'); background-size: cover; color: white; padding: 100px 0; }
-        .card { transition: 0.3s; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        .card:hover { transform: translateY(-10px); box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduNova Institute | Learn, Build, Excel</title>
+  <meta name="description" content="Professional coaching for school students from 5th to 12th, programming, web design, databases, student projects, and Arduino-based microcontroller projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="hero">
+    <nav class="navbar container">
+      <a href="#" class="brand">EduNova Institute</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
 
-    <header class="hero-section text-center">
-        <h1>Welcome to EduTech Academy...</h1>
-        <p class="lead">Where Innovation Meets Education</p>
-    </header>
+    <div class="hero-content container">
+      <div class="hero-text">
+        <span class="badge">Innovative Learning Center</span>
+        <h1>Build strong skills for school, coding, and real-world success.</h1>
+        <p>
+          We are a trusted institute helping students from 5th to 12th grade master academics,
+          programming, web design, databases, and hands-on technology projects with expert guidance.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Book a Free Demo</a>
+          <a href="#programs" class="btn btn-secondary">Explore Courses</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <strong>100+</strong>
+            <span>Happy Students</span>
+          </div>
+          <div>
+            <strong>8+</strong>
+            <span>Years of Experience</span>
+          </div>
+          <div>
+            <strong>100%</strong>
+            <span>Practical Learning</span>
+          </div>
+        </div>
+      </div>
 
-    <div class="container my-5">
-        <h2 class="text-center mb-5">Our Programs</h2>
-        <div class="row g-4" id="services">
-            </div>
+      <div class="hero-visual">
+        <div class="hero-visual-card">
+          <img src="assets/hero-learning.svg" alt="Students learning technology and coding" />
+          <div class="hero-visual-badge">Live classes • Practical training • Project-based learning</div>
+        </div>
+        <div class="hero-card">
+          <h3>Why Choose EduNova?</h3>
+          <ul>
+            <li>Personalized coaching for every student</li>
+            <li>Modern teaching methods with real examples</li>
+            <li>Hands-on projects and coding practice</li>
+            <li>Supportive environment for confident growth</li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </header>
 
-    <script>
-        const services = [
-            { title: "School Tuition", desc: "Expert coaching for 5th to 12th standard students.", icon: "📚" },
-            { title: "Microcontroller Projects", desc: "Practical hands-on training with Arduino & IoT.", icon: "🤖" },
-            { title: "Programming & Web", desc: "Master Python, Java, and Modern Web Designing.", icon: "💻" },
-            { title: "Physical Activities", desc: "Holistic development with sports and fitness.", icon: "🏃" }
-        ];
+  <main>
+    <section id="about" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">About Us</p>
+        <h2>We help students grow into confident learners and future-ready creators.</h2>
+        <p>
+          Our institute offers a complete learning experience that blends academic support with modern
+          technology education. Whether a student needs school tuition or wants to explore software,
+          web development, or hardware projects, we provide the right guidance at every step.
+        </p>
+      </div>
 
-        const container = document.getElementById('services');
-        services.forEach(item => {
-            container.innerHTML += `
-                <div class="col-md-3">
-                    <div class="card p-4 text-center h-100">
-                        <div style="font-size: 50px;">${item.icon}</div>
-                        <h4>${item.title}</h4>
-                        <p>${item.desc}</p>
-                    </div>
-                </div>
-            `;
-        });
-    </script>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>📚 School Tuition</h3>
+          <p>Structured coaching for students from class 5 to 12 in core academic subjects.</p>
+        </article>
+        <article class="feature-card">
+          <h3>💻 Programming</h3>
+          <p>Learn C#, Python, Java, and build problem-solving skills with practical examples.</p>
+        </article>
+        <article class="feature-card">
+          <h3>🌐 Web Designing</h3>
+          <p>Master HTML, CSS, JavaScript, React, and Angular to create modern websites.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="showcase">
+        <div class="showcase-image">
+          <img src="assets/showcase-learning.svg" alt="Students collaborating on learning projects" />
+        </div>
+        <div class="showcase-content">
+          <p class="eyebrow">Learning Experience</p>
+          <h2>Bright lessons, real projects, and guided support that keeps students inspired.</h2>
+          <p>
+            Every class is designed to make learning feel exciting and meaningful. We blend academic support,
+            coding practice, creativity, and personal mentorship so students stay motivated and confident.
+          </p>
+          <div class="pill-row">
+            <span class="pill">Interactive Classes</span>
+            <span class="pill">Live Doubt Solving</span>
+            <span class="pill">Career Ready Skills</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="programs" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Our Programs</p>
+          <h2>Everything you need for academic excellence and modern technology skills.</h2>
+        </div>
+
+        <div class="program-grid">
+          <article class="program-card">
+            <h3>School Tuition</h3>
+            <p>Expert support for students from 5th to 12th grade in school subjects and exam preparation.</p>
+          </article>
+          <article class="program-card">
+            <h3>Programming Languages</h3>
+            <p>Learn C#, Python, and Java with beginner-friendly lessons and hands-on coding practice.</p>
+          </article>
+          <article class="program-card">
+            <h3>Web Designing</h3>
+            <p>Create beautiful websites using HTML, CSS, JavaScript, React, and Angular.</p>
+          </article>
+          <article class="program-card">
+            <h3>Database Training</h3>
+            <p>Understand database concepts and practice SQL and MongoDB for real-world applications.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">Projects & Innovation</p>
+        <h2>Turn knowledge into exciting real-world projects.</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Student Projects</h3>
+          <p>Develop useful academic and mini-projects that strengthen practical understanding.</p>
+        </article>
+        <article class="project-card">
+          <h3>Arduino Projects</h3>
+          <p>Build smart electronics and microcontroller-based solutions with Arduino.</p>
+        </article>
+        <article class="project-card">
+          <h3>Innovation Practice</h3>
+          <p>Learn by creating, testing, and presenting projects with confidence and creativity.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow">Contact Us</p>
+            <h2>Ready to begin your learning journey?</h2>
+            <p>Join EduNova Institute today and take the first step toward academic excellence and technology skills.</p>
+          </div>
+          <a href="mailto:info@edunova.com" class="btn btn-primary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 EduNova Institute. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
